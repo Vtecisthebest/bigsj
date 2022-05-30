@@ -17,7 +17,7 @@ $(function () {
     pwd: [/^[\S]{6,12}$/, "密码必须6到12位，且不能出现空格"],
     repwd: (value) => {
       const pwd = $("#form_reg [name=password]").val();
-      if (pwd !== value) return "两次密码不一致";
+      if (pwd !== value) return "两次密码不一致哟";
     },
   });
 
@@ -31,8 +31,8 @@ $(function () {
         password: $("#form_reg [name=password]").val(),
       },
       success: (res) => {
-        if (res.status !== 0) return "您的注册不对";
-        layer.msg("注册成功");
+        if (res.status !== 0) return "您的注册不对呢";
+        layer.msg("注册成功了");
         $("#link_login").click();
       },
     });
